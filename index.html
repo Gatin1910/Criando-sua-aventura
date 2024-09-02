@@ -1,0 +1,85 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca de Bartolomeu</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-passo0.png" alt="">
+            <p>Em uma manhã comum, estava a caminhar no jardim em direção a casinha do meu cachorro, ao chegar la percebo que ele desapareceu e no lugar há uma carta com o nome de dois lugares. Decido seguir para um desses lugares para poder encontrar o meu cachorro Bartolomeu.</p>
+            <button class="btn-proximo" data-proximo="1">PetShop</button>
+            <button class="btn-proximo" data-proximo="2">Clinica Veterinaria</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você começa sua jornada a caminho do PetShop, com esperança de encontrar a primeira pista.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar a pista na sala de banho</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Na Clinica Veterinaria, você encontra uma amiga. Ela diz que tem um recado para você e que a primeira pista esta onde os pets são tratados para ficarem melhor. Por qual local você começa?</p>
+            <button class="btn-proximo" data-proximo="5">Sala de medicamentos</button>
+            <button class="btn-proximo" data-proximo="6">Sala de cirurgia</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Na sala de banho, você encontra um papel escrito que a proxima pista esta localizada onde se pode brincar com seu pet.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Parque</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta se teria achado o Bartolomeu.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Na sala de medicamentos, você descobre um mapa escondido atras de alguns remédios, apontando que a próxima
+                pista está no Parque.</p>
+            <button class="btn-proximo" data-proximo="7">Ir até o Parque</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Explorando a sala de cirurgia, você encontra uma coleira, mas não era a de seu cachorro.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar para sala de medicamentos</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>No parque, a busca por Bartolomeu se intensifica. Você tem a opção de seguir para o lado direito do parque ou para o lado esquerdo.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pelo lado direito</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pelo lado esquerdo</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta para sala de medicamentos, você finalmente encontra a dica. Agora, para o Parque!</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Parque</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>O lado direito leva você a um campo onde tem muitos pets brincando com seus donos e o Bartolomeu esta la com o seu irmão.</p>
+            <button class="btn-proximo" data-proximo="11">Ir até Bartolomeu</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>O lado esquerdo termina em um muro de arbustos. Apesar de ser belo, não há sinais de Bartolomeu
+                aqui.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro lado</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="cenario-passo11-parque.jpg" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
+            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar
+                este lugar</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Retornando e escolhendo o lado á direita, você finalmente encontra o seu cachorro junto com o seu irmão.</p>
+            <button class="btn-proximo" data-proximo="11">Ir até Bartolomeu</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
